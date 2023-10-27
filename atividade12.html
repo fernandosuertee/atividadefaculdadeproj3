@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 12: Criar 2 funções em JS para somar ou multiplicar valores</title>
+  <script>
+    function soma() {
+      var x = parseFloat(document.prova.c1.value) + parseFloat(document.prova.c2.value) + parseFloat(document.prova.c3.value);
+      document.prova.c4.value = x;
+    }
+
+    function multiplica() {
+      var y = parseFloat(document.prova.c1.value) * parseFloat(document.prova.c2.value) * parseFloat(document.prova.c3.value);
+      document.prova.c4.value = y;
+    }
+  </script>
+</head>
+<body>
+  <form name="prova">
+    <p>Entre com os valores nos campos e clique nos botões.</p>
+    <p>Valor1: <input type="text" name="c1" value="" size="5" maxlength="5"></p>
+    <p>Valor2: <input type="text" name="c2" value="" size="5" maxlength="5"></p>
+    <p>Valor3: <input type="text" name="c3" value="" size="5" maxlength="5"></p>
+    <input type="button" value="Somar" onclick="soma()">
+    <input type="button" value="Multiplicar" onclick="multiplica()">
+    <p>Resposta: <input type="text" name="c4" value="" size="10" maxlength="10"></p>
+  </form>
+</body>
+</html>

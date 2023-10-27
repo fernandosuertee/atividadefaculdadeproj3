@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 6: Apresentar a data em diversos formatos.</title>
+  <script>
+    var hoje = new Date();
+    document.write("Data e hora completa: " + hoje);
+    document.write("<br>Apenas o dia: " + hoje.getDate());
+    document.write("<br>Apenas o mês (0 a 11): " + hoje.getMonth());
+    document.write("<br>Apenas o ano: " + hoje.getFullYear());
+    document.write("<br>Apenas o dia da semana (0 a 6): " + hoje.getDay());
+
+    var horas = hoje.getHours();
+    var minutos = hoje.getMinutes();
+    document.write("<br>Apenas a hora e minutos: " + (horas < 10 ? "0" : "") + horas + ":" + (minutos < 10 ? "0" : "") + minutos);
+  </script>
+</head>
+<body>
+</body>
+</html>

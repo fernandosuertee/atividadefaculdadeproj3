@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 14: Trocar figura passando o mouse.</title>
+  <script language="JavaScript">
+    function mouseEmCima(imagem) {
+      imagem.src = "figura1.jpg";
+    }
+
+    function mouseFora(imagem) {
+      imagem.src = "figura2.jpg";
+    }
+    
+    function trocarImagem(imagem) {
+      if (imagem.src.endsWith("figura1.jpg")) {
+        imagem.src = "figura2.jpg";
+      } else {
+        imagem.src = "figura1.jpg";
+      }
+    }
+  </script>
+</head>
+<body>
+  <p>Passe o mouse sobre a imagem: </p>
+  <img src="figura2.jpg" onclick="trocarImagem(this)" onmouseover="mouseEmCima(this)" width="300" height="300">
+</body>
+</html>
